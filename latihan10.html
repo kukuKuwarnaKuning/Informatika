@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservasi Cafe</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #ffe601;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: rgb(255, 159, 15);
+            padding: 30px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 12px;
+            color: gray;
+        }
+
+        label {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #6b4a3b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ffcbb4;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Sonnenblume creative store</h2>
+    <p>Silakan isi formulir untuk reservasi meja.</p>
+
+    <form>
+        <label>Nama Reservasi</label>
+        <input type="text" placeholder="Atas nama siapa?">
+
+        <label>Nomor WhatsApp</label>
+        <input type="text" placeholder="Contoh: 085798777941">
+
+        <label>Pilihan Area Meja</label>
+        <div class="radio-group">
+            <label><input type="radio" name="area"> Area Dalam (Sonnenblume house)</label>
+            <label><input type="radio" name="area"> Area Luar (Sonnenblume garden)</label>
+        </div>
+
+        <label>Waktu Kedatangan</label>
+        <select>
+            <option>Pilih waktu kedatangan...</option>
+            <option>Pagi (08:00 - 11:00)</option>
+            <option>Siang (12:00 - 15:00)</option>
+            <option>Sore (15:00 - 18:00)</option>
+            <option>Malam (19:00 - 20:00)</option>
+        </select>
+
+        <label>Tujuan Reservasi</label>
+        <select>
+            <option>Pilih tujuan acara...</option>
+            <option>Paket Diy Pottery </option>
+            <option>Paket Diy melukis</option>
+            <option>Paket Diy baking</option>
+            <option>Paket Diy Keychain</option>
+        </select>
+
+        <label>Catatan Khusus</label>
+        <textarea placeholder="Contoh: mau meminta rol kuas lebih, bawa manik-manik sendiri, dll"></textarea>
+
+        <button type="submit">KONFIRMASI RESERVASI</button>
+    </form>
+</div>
+
+</body>
+</html>
